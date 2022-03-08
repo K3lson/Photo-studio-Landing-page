@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Woman</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="logo">
+            Creative
+        </div>
+        <img src="bg.jpg" class="bg">
+        <div class="content">
+            <h2>Let's Make <br>Something Creative</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet minus, error consectetur velit porro molestiae aliquid ullam minima dolore modi ut qui et repellat numquam odio nisi cupiditate rerum excepturi.</p>
+            <a href="http://">Get Started</a>
+        </div>
+        <p class="copyrightText">Kelvin Maniac</p>
+    </section>
+    <div class="menu" onclick="toggleMenu()"></div>
+    <div class="navigation ">
+        <ul>
+            <li><a href="http://">Home</a></li>
+            <li><a href="http://">About</a></li>
+            <li><a href="http://">Services</a></li>
+            <li><a href="http://">Team</a></li>
+            <li><a href="http://">Contact</a></li>
+        </ul>
+        <div class="socialBar">
+            <ul>
+                <li><a href="http://"><img src="facebook.png" alt=""></a></li>
+                <li><a href="http://"><img src="twitter.png" alt=""></a></li>
+                <li><a href="http://"><img src="instagram.png" alt=""></a></li>
+            </ul>
+            <a href="mailto:n3lsonfree@gmail.com" class="emailBx"><img src="email.png" alt=""></a>
+        </div>
+    </div>
+    <script>
+        function toggleMenu(){
+            var menuToggle = document.querySelector('.menu');
+            var navigation = document.querySelector('.navigation');
+            menuToggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
